@@ -9,8 +9,8 @@
 
 ## ディレクトリ構成
 ```
+README.md                    # 本ファイル
 IC/
-├── README.md                    # 本ファイル
 ├── CLAUDE.md                    # Claude Code向けガイドライン
 ├── テンプレート/                 # 各種テンプレートファイル
 │   ├── CLAUDE.md  # テンプレートの作業手順
