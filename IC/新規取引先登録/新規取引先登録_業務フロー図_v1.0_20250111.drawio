@@ -1,0 +1,450 @@
+<mxfile host="app.diagrams.net" modified="2025-01-08" agent="Claude Code" version="24.0.0" type="device">
+  <diagram name="業務フロー図テンプレート" id="process-flow-template">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- タイトル -->
+        <mxCell id="title" value="新規取引先登録 業務フロー図" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="600" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- スイムレーンコンテナ -->
+        <mxCell id="2" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="120" width="1530" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- 社外 -->
+        <mxCell id="3" value="社外&lt;br&gt;（新規取引先）" style="swimlane;html=1;startSize=60;fillColor=#F5F5F5;" parent="2" vertex="1">
+          <mxGeometry width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="start" value="開始" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" parent="3" vertex="1">
+          <mxGeometry x="35" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 営業担当者 -->
+        <mxCell id="4" value="営業担当者&lt;br&gt;（営業部）" style="swimlane;html=1;startSize=60;fillColor=#E6F3FF;" parent="2" vertex="1">
+          <mxGeometry x="170" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-001: 登録申請受付 -->
+        <mxCell id="process-001" value="登録申請受付&lt;br&gt;(P-001)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-001: 申請書類の不備・誤記 -->
+        <mxCell id="risk-001" value="R-001&lt;br&gt;申請書類の&lt;br&gt;不備・誤記" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="150" y="70" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-001: 申請書記載要領確認 -->
+        <mxCell id="control-001" value="C-001&lt;br&gt;記載要領&lt;br&gt;確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="-40" y="90" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-008: 契約交渉・調整 -->
+        <mxCell id="process-008" value="契約交渉・調整&lt;br&gt;(P-008)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- P-010: 契約書調印 -->
+        <mxCell id="process-010" value="契約書調印&lt;br&gt;(P-010)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- P-013: 登録完了通知 -->
+        <mxCell id="process-013" value="登録完了通知&lt;br&gt;(P-013)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 営業承認者 -->
+        <mxCell id="5" value="営業承認者&lt;br&gt;（営業部長）" style="swimlane;html=1;startSize=60;fillColor=#E6F3FF;" parent="2" vertex="1">
+          <mxGeometry x="340" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-002: 申請内容確認 （営業事務で実施） -->
+        <mxCell id="process-002" value="申請内容確認&lt;br&gt;(P-002)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-002: 必要書類の確認漏れ -->
+        <mxCell id="risk-002" value="R-002&lt;br&gt;必要書類の&lt;br&gt;確認漏れ" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="150" y="150" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-002: チェックリストによる確認 -->
+        <mxCell id="control-002" value="C-002&lt;br&gt;チェックリスト&lt;br&gt;確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="-40" y="170" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- S-001: ワークフローシステム -->
+        <mxCell id="system-001" value="S-001&lt;br&gt;ワークフロー&lt;br&gt;システム" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#B0E0E6;strokeColor=#5D7F99;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="150" y="190" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-006: 登録可否判定 -->
+        <mxCell id="process-006" value="登録可否判定&lt;br&gt;(P-006)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6E6;" parent="5" vertex="1">
+          <mxGeometry x="35" y="370" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- R-006: 不適切な取引先の承認 -->
+        <mxCell id="risk-006" value="R-006&lt;br&gt;不適切な&lt;br&gt;取引先承認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="5" vertex="1">
+          <mxGeometry x="140" y="360" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-006: 判定基準に基づく審査（キーコントロール） -->
+        <mxCell id="control-006" value="C-006 ★&lt;br&gt;判定基準&lt;br&gt;審査" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="5" vertex="1">
+          <mxGeometry x="-30" y="380" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 経理担当者 -->
+        <mxCell id="6" value="経理担当者&lt;br&gt;（経理部）" style="swimlane;html=1;startSize=60;fillColor=#F0F8E6;" parent="2" vertex="1">
+          <mxGeometry x="510" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-003: 信用調査依頼 -->
+        <mxCell id="process-003" value="信用調査依頼&lt;br&gt;(P-003)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F0DC;strokeColor=#000000;" parent="6" vertex="1">
+          <mxGeometry x="25" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-003: 調査依頼の漏れ・遅延 -->
+        <mxCell id="risk-003" value="R-003&lt;br&gt;調査依頼の&lt;br&gt;漏れ・遅延" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="6" vertex="1">
+          <mxGeometry x="150" y="230" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-003: 信用調査期限管理 -->
+        <mxCell id="control-003" value="C-003&lt;br&gt;期限管理" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="6" vertex="1">
+          <mxGeometry x="-40" y="250" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-005: 財務分析 -->
+        <mxCell id="process-005" value="財務分析&lt;br&gt;(P-005)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F0DC;strokeColor=#000000;" parent="6" vertex="1">
+          <mxGeometry x="25" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-005: 与信限度額の誤算定 -->
+        <mxCell id="risk-005" value="R-005&lt;br&gt;与信限度額&lt;br&gt;誤算定" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="6" vertex="1">
+          <mxGeometry x="150" y="300" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-005: 与信管理規程に基づく算定 -->
+        <mxCell id="control-005" value="C-005&lt;br&gt;与信管理&lt;br&gt;規程基準" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="6" vertex="1">
+          <mxGeometry x="-40" y="320" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 法務担当者 -->
+        <mxCell id="7" value="法務担当者&lt;br&gt;（法務部）" style="swimlane;html=1;startSize=60;fillColor=#F0F8E6;" parent="2" vertex="1">
+          <mxGeometry x="680" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-004: 反社チェック -->
+        <mxCell id="process-004" value="反社チェック&lt;br&gt;(P-004)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F0DC;strokeColor=#000000;" parent="7" vertex="1">
+          <mxGeometry x="25" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-004: 反社会的勢力の見逃し -->
+        <mxCell id="risk-004" value="R-004&lt;br&gt;反社勢力&lt;br&gt;見逃し" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="150" y="260" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-004: 複数DB・複数名での確認（キーコントロール） -->
+        <mxCell id="control-004" value="C-004 ★&lt;br&gt;複数DB&lt;br&gt;複数名確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="7" vertex="1">
+          <mxGeometry x="-40" y="280" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- S-002: 反社DBシステム -->
+        <mxCell id="system-002" value="S-002&lt;br&gt;反社DB&lt;br&gt;システム" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#B0E0E6;strokeColor=#5D7F99;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="150" y="300" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-007: 基本契約締結 -->
+        <mxCell id="process-007" value="基本契約締結&lt;br&gt;(P-007)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F0DC;strokeColor=#000000;" parent="7" vertex="1">
+          <mxGeometry x="25" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-007: 不利な契約条件の見逃し -->
+        <mxCell id="risk-007" value="R-007&lt;br&gt;不利な契約&lt;br&gt;条件見逃し" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="150" y="440" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-007: 法務部による契約審査 -->
+        <mxCell id="control-007" value="C-007&lt;br&gt;契約審査" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="-40" y="460" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 法務承認者 -->
+        <mxCell id="8" value="法務承認者&lt;br&gt;（法務部長）" style="swimlane;html=1;startSize=60;fillColor=#F0F8E6;" parent="2" vertex="1">
+          <mxGeometry x="850" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-009: 契約内容承認 -->
+        <mxCell id="process-009" value="契約内容承認&lt;br&gt;(P-009)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6E6;" parent="8" vertex="1">
+          <mxGeometry x="35" y="560" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- R-008: 契約不備による損失 -->
+        <mxCell id="risk-008" value="R-008&lt;br&gt;契約不備&lt;br&gt;損失" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="8" vertex="1">
+          <mxGeometry x="140" y="550" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-008: 契約審査基準での確認（キーコントロール） -->
+        <mxCell id="control-008" value="C-008 ★&lt;br&gt;契約審査&lt;br&gt;基準確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="8" vertex="1">
+          <mxGeometry x="-30" y="570" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- システム担当者 -->
+        <mxCell id="9" value="システム担当者&lt;br&gt;（システム部）" style="swimlane;html=1;startSize=60;fillColor=#FFF0E6;" parent="2" vertex="1">
+          <mxGeometry x="1020" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-011: マスタ登録依頼（営業事務から） -->
+        <mxCell id="process-011" value="マスタ登録依頼&lt;br&gt;(P-011)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-010: 誤った情報でのマスタ登録 -->
+        <mxCell id="risk-010" value="R-010&lt;br&gt;誤情報での&lt;br&gt;マスタ登録" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="150" y="710" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-010: 登録前データ確認 -->
+        <mxCell id="control-010" value="C-010&lt;br&gt;登録前&lt;br&gt;データ確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="-40" y="730" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-012: マスタ登録実行 -->
+        <mxCell id="process-012" value="マスタ登録実行&lt;br&gt;(P-012)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE8D8;strokeColor=#000000;" parent="9" vertex="1">
+          <mxGeometry x="25" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-011: マスタ登録ミス -->
+        <mxCell id="risk-011" value="R-011&lt;br&gt;マスタ&lt;br&gt;登録ミス" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="9" vertex="1">
+          <mxGeometry x="150" y="710" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-011: ダブルチェック体制 -->
+        <mxCell id="control-011" value="C-011&lt;br&gt;ダブル&lt;br&gt;チェック" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="9" vertex="1">
+          <mxGeometry x="-40" y="730" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 社内システム -->
+        <mxCell id="10" value="社内システム&lt;br&gt;（ワークフロー/ERP）" style="swimlane;html=1;startSize=60;fillColor=#F0E6FF;" parent="2" vertex="1">
+          <mxGeometry x="1190" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- S-003: ERPシステム登録 -->
+        <mxCell id="system-003" value="ERPシステム&lt;br&gt;マスタ登録&lt;br&gt;(S-003)" style="rectangle;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="10" vertex="1">
+          <mxGeometry x="25" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 社外サービス -->
+        <mxCell id="11" value="社外サービス&lt;br&gt;（信用調査/反社DB）" style="swimlane;html=1;startSize=60;fillColor=#F5F5F5;" parent="2" vertex="1">
+          <mxGeometry x="1360" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="end" value="終了" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;" parent="11" vertex="1">
+          <mxGeometry x="45" y="800" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- フロー線定義 -->
+        <!-- 開始 → P-001 -->
+        <mxCell id="flow-start-001" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="start" target="process-001" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-001 → P-002 -->
+        <mxCell id="flow-001-002" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-001" target="process-002" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-002 → P-003 -->
+        <mxCell id="flow-002-003" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-002" target="process-003" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-003 → P-004 -->
+        <mxCell id="flow-003-004" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-003" target="process-004" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-004 → P-005 -->
+        <mxCell id="flow-004-005" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-004" target="process-005" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-005 → P-006 -->
+        <mxCell id="flow-005-006" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-005" target="process-006" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-006 承認 → P-007 -->
+        <mxCell id="flow-006-007-yes" value="承認" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-006" target="process-007" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-006 却下 → 終了 -->
+        <mxCell id="flow-006-end-no" value="却下" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CC0000;" parent="1" source="process-006" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="595" y="1000" />
+              <mxPoint x="1445" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- P-007 → P-008 -->
+        <mxCell id="flow-007-008" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-007" target="process-008" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-008 → P-009 -->
+        <mxCell id="flow-008-009" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-008" target="process-009" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-009 承認 → P-010 -->
+        <mxCell id="flow-009-010-yes" value="承認" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-009" target="process-010" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="935" y="760" />
+              <mxPoint x="255" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- P-009 修正要 → P-008 -->
+        <mxCell id="flow-009-008-no" value="修正要" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF9900;" parent="1" source="process-009" target="process-008" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="935" y="590" />
+              <mxPoint x="160" y="590" />
+              <mxPoint x="160" y="630" />
+              <mxPoint x="255" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- P-010 → P-011 -->
+        <mxCell id="flow-010-011" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-010" target="process-011" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-011 → P-012 -->
+        <mxCell id="flow-011-012" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-011" target="process-012" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P-012 → S-003 -->
+        <mxCell id="flow-012-s003" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="process-012" target="system-003" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- S-003 → P-013 -->
+        <mxCell id="flow-s003-013" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="system-003" target="process-013" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="950" />
+              <mxPoint x="255" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- P-013 → 終了 -->
+        <mxCell id="flow-013-end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="process-013" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="255" y="990" />
+              <mxPoint x="1445" y="990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- R-009: 無権限者による契約締結 -->
+        <mxCell id="risk-009" value="R-009&lt;br&gt;無権限者&lt;br&gt;契約締結" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="5" vertex="1">
+          <mxGeometry x="140" y="770" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-009: 職務権限規程での確認 -->
+        <mxCell id="control-009" value="C-009&lt;br&gt;権限規程&lt;br&gt;確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="5" vertex="1">
+          <mxGeometry x="-30" y="780" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- レジェンド -->
+        <mxCell id="legend-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="1040" width="1200" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-title" value="【凡例】" style="text;html=1;fontSize=14;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="30" y="1050" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- プロセス記号 -->
+        <mxCell id="legend-process" value="業務プロセス" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;" parent="1" vertex="1">
+          <mxGeometry x="30" y="1090" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 承認判断 -->
+        <mxCell id="legend-decision" value="承認・判断" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6E6;" parent="1" vertex="1">
+          <mxGeometry x="140" y="1090" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- リスク付箋 -->
+        <mxCell id="legend-risk" value="R-XXX&lt;br&gt;リスク" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="230" y="1090" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 統制付箋 -->
+        <mxCell id="legend-control" value="C-XXX&lt;br&gt;統制" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1090" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- キーコントロール付箋 -->
+        <mxCell id="legend-key-control" value="C-XXX ★&lt;br&gt;キーコントロール" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="1090" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- IT統制付箋 -->
+        <mxCell id="legend-it-control" value="C-XXX&lt;br&gt;IT統制" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#B0E0E6;strokeColor=#5D7F99;size=15;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="460" y="1090" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- システム処理 -->
+        <mxCell id="legend-system" value="システム処理" style="rectangle;whiteSpace=wrap;html=1;fillColor=#E8D8FF;" parent="1" vertex="1">
+          <mxGeometry x="530" y="1090" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- フロー線の説明 -->
+        <mxCell id="legend-flow-normal" value="通常フロー" style="text;html=1;fontSize=12;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="650" y="1090" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-line-normal" value="" style="endArrow=classic;html=1;strokeWidth=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="1100" as="sourcePoint" />
+            <mxPoint x="800" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="legend-flow-system" value="システム連携" style="text;html=1;fontSize=12;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="650" y="1110" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-line-system" value="" style="endArrow=classic;html=1;strokeWidth=1;dashed=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="1120" as="sourcePoint" />
+            <mxPoint x="800" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 参照番号の説明 -->
+        <mxCell id="legend-reference" value="※ P-XXX: プロセス番号、R-XXX: リスク番号、C-XXX: 統制番号、S-XXX: システム連携番号は業務記述書と対応" style="text;html=1;fontSize=11;verticalAlign=middle;align=left;fontStyle=2;" parent="1" vertex="1">
+          <mxGeometry x="820" y="1095" width="380" height="30" as="geometry" />
+        </mxCell>
+        
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

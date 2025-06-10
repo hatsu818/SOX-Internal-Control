@@ -1,0 +1,181 @@
+<mxfile host="app.diagrams.net" modified="2025-01-08" agent="Claude Code" version="24.0.0" type="device">
+  <diagram name="業務フロー図テンプレート" id="process-flow-template">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- タイトル -->
+        <mxCell id="title" value="[プロセス名] 業務フロー図" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="600" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- スイムレーンコンテナ -->
+        <mxCell id="2" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="120" width="1530" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- 社外 -->
+        <mxCell id="3" value="社外&lt;br&gt;（取引先/顧客）" style="swimlane;html=1;startSize=60;fillColor=#F5F5F5;" parent="2" vertex="1">
+          <mxGeometry width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="start" value="開始" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" parent="3" vertex="1">
+          <mxGeometry x="35" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- フロント担当者 -->
+        <mxCell id="4" value="フロント担当者&lt;br&gt;（○○部門）" style="swimlane;html=1;startSize=60;fillColor=#E6F3FF;" parent="2" vertex="1">
+          <mxGeometry x="170" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- サンプルプロセス -->
+        <mxCell id="sample-process" value="プロセス名&lt;br&gt;(P-001)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- サンプルリスク付箋 -->
+        <mxCell id="sample-risk" value="R-001&lt;br&gt;リスク内容" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="150" y="190" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- サンプル統制付箋 -->
+        <mxCell id="sample-control" value="C-001&lt;br&gt;統制内容" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="-40" y="210" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- フロント承認者 -->
+        <mxCell id="5" value="フロント承認者&lt;br&gt;（○○責任者）" style="swimlane;html=1;startSize=60;fillColor=#E6F3FF;" parent="2" vertex="1">
+          <mxGeometry x="340" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- サンプル承認 -->
+        <mxCell id="sample-approval" value="承認判断&lt;br&gt;(P-002)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6E6;" parent="5" vertex="1">
+          <mxGeometry x="35" y="300" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- ミドルオフィス担当者 -->
+        <mxCell id="6" value="ミドルオフィス担当者&lt;br&gt;（○○部）" style="swimlane;html=1;startSize=60;fillColor=#F0F8E6;" parent="2" vertex="1">
+          <mxGeometry x="510" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- ミドルオフィス承認者 -->
+        <mxCell id="7" value="ミドルオフィス承認者&lt;br&gt;（○○部長）" style="swimlane;html=1;startSize=60;fillColor=#F0F8E6;" parent="2" vertex="1">
+          <mxGeometry x="680" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- バックオフィス担当者 -->
+        <mxCell id="8" value="バックオフィス担当者&lt;br&gt;（経理/財務）" style="swimlane;html=1;startSize=60;fillColor=#FFF0E6;" parent="2" vertex="1">
+          <mxGeometry x="850" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- バックオフィス承認者 -->
+        <mxCell id="9" value="バックオフィス承認者&lt;br&gt;（○○部長）" style="swimlane;html=1;startSize=60;fillColor=#FFF0E6;" parent="2" vertex="1">
+          <mxGeometry x="1020" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- 社内システム -->
+        <mxCell id="10" value="社内システム&lt;br&gt;（ERP/基幹）" style="swimlane;html=1;startSize=60;fillColor=#F0E6FF;" parent="2" vertex="1">
+          <mxGeometry x="1190" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- サンプルシステム処理 -->
+        <mxCell id="sample-system" value="システム処理&lt;br&gt;(S-001)" style="rectangle;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="10" vertex="1">
+          <mxGeometry x="25" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 社外サービス -->
+        <mxCell id="11" value="社外サービス&lt;br&gt;（SaaS/銀行）" style="swimlane;html=1;startSize=60;fillColor=#F5F5F5;" parent="2" vertex="1">
+          <mxGeometry x="1360" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="end" value="終了" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;" parent="11" vertex="1">
+          <mxGeometry x="45" y="800" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- サンプル接続線 -->
+        <mxCell id="sample-flow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="start" target="sample-process" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- レジェンド -->
+        <mxCell id="legend-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="1040" width="1200" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-title" value="【凡例】" style="text;html=1;fontSize=14;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="30" y="1050" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- プロセス記号 -->
+        <mxCell id="legend-process" value="業務プロセス" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;" parent="1" vertex="1">
+          <mxGeometry x="30" y="1090" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 承認判断 -->
+        <mxCell id="legend-decision" value="承認・判断" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6E6;" parent="1" vertex="1">
+          <mxGeometry x="140" y="1090" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- リスク付箋 -->
+        <mxCell id="legend-risk" value="R-XXX&lt;br&gt;リスク" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="230" y="1090" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 統制付箋 -->
+        <mxCell id="legend-control" value="C-XXX&lt;br&gt;統制" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1090" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- キーコントロール付箋 -->
+        <mxCell id="legend-key-control" value="C-XXX ★&lt;br&gt;キーコントロール" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="1090" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- IT統制付箋 -->
+        <mxCell id="legend-it-control" value="C-XXX&lt;br&gt;IT統制" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#B0E0E6;strokeColor=#5D7F99;size=15;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="460" y="1090" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- システム処理 -->
+        <mxCell id="legend-system" value="システム処理" style="rectangle;whiteSpace=wrap;html=1;fillColor=#E8D8FF;" parent="1" vertex="1">
+          <mxGeometry x="530" y="1090" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- フロー線の説明 -->
+        <mxCell id="legend-flow-normal" value="通常フロー" style="text;html=1;fontSize=12;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="650" y="1090" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-line-normal" value="" style="endArrow=classic;html=1;strokeWidth=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="1100" as="sourcePoint" />
+            <mxPoint x="800" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="legend-flow-system" value="システム連携" style="text;html=1;fontSize=12;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="650" y="1110" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-line-system" value="" style="endArrow=classic;html=1;strokeWidth=1;dashed=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="1120" as="sourcePoint" />
+            <mxPoint x="800" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 参照番号の説明 -->
+        <mxCell id="legend-reference" value="※ P-XXX: プロセス番号、R-XXX: リスク番号、C-XXX: 統制番号、S-XXX: システム連携番号は業務記述書と対応" style="text;html=1;fontSize=11;verticalAlign=middle;align=left;fontStyle=2;" parent="1" vertex="1">
+          <mxGeometry x="820" y="1095" width="380" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- 使用方法メモ -->
+        <mxCell id="usage-note" value="【使用方法】&#xa;1. このテンプレートファイルをコピーして、新しいファイル名で保存&#xa;2. タイトルをプロセス名に変更&#xa;3. スイムレーンの部門名を実際の部門に変更（不要なレーンは削除）&#xa;4. サンプル要素を削除し、実際のプロセスを配置&#xa;5. プロセス番号（P-XXX）、リスク番号（R-XXX）、統制番号（C-XXX）を採番&#xa;6. 付箋は以下のルールで配置：&#xa;   - リスク：プロセスの右側&#xa;   - 統制：プロセスの左側または上側&#xa;   - キーコントロール：目立つ位置に★マーク付き&#xa;7. フロー線で接続（システム連携は破線）" style="text;html=1;fontSize=11;verticalAlign=top;align=left;fillColor=#FFFFCC;strokeColor=#D6B656;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1250" y="1040" width="280" height="180" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
