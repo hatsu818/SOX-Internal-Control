@@ -1,0 +1,344 @@
+<mxfile host="app.diagrams.net" modified="2025-06-14" agent="Claude Code" version="24.0.0" type="device">
+  <diagram name="売上プロセス業務フロー図" id="sales-process-flow">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- タイトル -->
+        <mxCell id="title" value="売上プロセス 業務フロー図" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="600" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- スイムレーンコンテナ -->
+        <mxCell id="2" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="120" width="1530" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- 社外（顧客） -->
+        <mxCell id="3" value="社外&lt;br&gt;（顧客）" style="swimlane;html=1;startSize=60;fillColor=#F5F5F5;" parent="2" vertex="1">
+          <mxGeometry width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="start" value="開始" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" parent="3" vertex="1">
+          <mxGeometry x="35" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="customer-order" value="注文" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;" parent="3" vertex="1">
+          <mxGeometry x="25" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 営業担当者 -->
+        <mxCell id="4" value="営業担当者&lt;br&gt;（営業部）" style="swimlane;html=1;startSize=60;fillColor=#E6F3FF;" parent="2" vertex="1">
+          <mxGeometry x="170" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-001: 注文受付 -->
+        <mxCell id="process-001" value="注文受付&lt;br&gt;(P-001)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-001リスク付箋 -->
+        <mxCell id="risk-001" value="R-001&lt;br&gt;架空売上" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="150" y="130" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-001統制付箋 -->
+        <mxCell id="control-001" value="C-001&lt;br&gt;注文確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="-40" y="150" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-004: 出荷指示 -->
+        <mxCell id="process-004" value="出荷指示&lt;br&gt;(P-004)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="4" vertex="1">
+          <mxGeometry x="25" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-004リスク付箋 -->
+        <mxCell id="risk-004" value="R-004&lt;br&gt;誤発送" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="150" y="390" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-004統制付箋 -->
+        <mxCell id="control-004" value="C-004&lt;br&gt;照合確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="4" vertex="1">
+          <mxGeometry x="-40" y="410" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 与信管理担当者 -->
+        <mxCell id="5" value="与信管理担当者&lt;br&gt;（与信管理部）" style="swimlane;html=1;startSize=60;fillColor=#F0F8E6;" parent="2" vertex="1">
+          <mxGeometry x="340" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-002: 与信チェック -->
+        <mxCell id="process-002" value="与信チェック&lt;br&gt;(P-002)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F0DC;strokeColor=#000000;" parent="5" vertex="1">
+          <mxGeometry x="25" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-002リスク付箋 -->
+        <mxCell id="risk-002" value="R-002&lt;br&gt;貸倒リスク" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="5" vertex="1">
+          <mxGeometry x="150" y="210" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-002キーコントロール付箋 -->
+        <mxCell id="control-002" value="C-002 ★&lt;br&gt;与信限度&lt;br&gt;チェック" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="5" vertex="1">
+          <mxGeometry x="-40" y="230" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 物流担当者 -->
+        <mxCell id="6" value="物流担当者&lt;br&gt;（物流部）" style="swimlane;html=1;startSize=60;fillColor=#F0F8E6;" parent="2" vertex="1">
+          <mxGeometry x="510" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-003: 在庫確認 -->
+        <mxCell id="process-003" value="在庫確認&lt;br&gt;(P-003)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F0DC;strokeColor=#000000;" parent="6" vertex="1">
+          <mxGeometry x="25" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-003リスク付箋 -->
+        <mxCell id="risk-003" value="R-003&lt;br&gt;在庫不足" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="6" vertex="1">
+          <mxGeometry x="150" y="290" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-003統制付箋 -->
+        <mxCell id="control-003" value="C-003&lt;br&gt;在庫照合" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="6" vertex="1">
+          <mxGeometry x="-40" y="310" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-005: 商品出荷 -->
+        <mxCell id="process-005" value="商品出荷&lt;br&gt;(P-005)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F0DC;strokeColor=#000000;" parent="6" vertex="1">
+          <mxGeometry x="25" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-005リスク付箋 -->
+        <mxCell id="risk-005" value="R-005&lt;br&gt;誤出荷" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="6" vertex="1">
+          <mxGeometry x="150" y="470" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-005統制付箋 -->
+        <mxCell id="control-005" value="C-005&lt;br&gt;出荷照合" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="6" vertex="1">
+          <mxGeometry x="-40" y="490" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 経理担当者 -->
+        <mxCell id="7" value="経理担当者&lt;br&gt;（経理部）" style="swimlane;html=1;startSize=60;fillColor=#FFF0E6;" parent="2" vertex="1">
+          <mxGeometry x="680" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- P-006: 売上計上 -->
+        <mxCell id="process-006" value="売上計上&lt;br&gt;(P-006)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE8D8;strokeColor=#000000;" parent="7" vertex="1">
+          <mxGeometry x="25" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-006リスク付箋 -->
+        <mxCell id="risk-006" value="R-006&lt;br&gt;期間帰属" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="150" y="550" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-006キーコントロール付箋 -->
+        <mxCell id="control-006" value="C-006 ★&lt;br&gt;出荷請求&lt;br&gt;照合" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="7" vertex="1">
+          <mxGeometry x="-40" y="570" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-007: 請求書発行 -->
+        <mxCell id="process-007" value="請求書発行&lt;br&gt;(P-007)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE8D8;strokeColor=#000000;" parent="7" vertex="1">
+          <mxGeometry x="25" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-007リスク付箋 -->
+        <mxCell id="risk-007" value="R-007&lt;br&gt;記載誤り" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="150" y="630" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-007統制付箋 -->
+        <mxCell id="control-007" value="C-007&lt;br&gt;請求確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="-40" y="650" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-008: 入金確認 -->
+        <mxCell id="process-008" value="入金確認&lt;br&gt;(P-008)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE8D8;strokeColor=#000000;" parent="7" vertex="1">
+          <mxGeometry x="25" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-008リスク付箋 -->
+        <mxCell id="risk-008" value="R-008&lt;br&gt;確認漏れ" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="150" y="710" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-008統制付箋 -->
+        <mxCell id="control-008" value="C-008&lt;br&gt;入金確認" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="-40" y="730" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- P-009: 売掛金消込 -->
+        <mxCell id="process-009" value="売掛金消込&lt;br&gt;(P-009)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE8D8;strokeColor=#000000;" parent="7" vertex="1">
+          <mxGeometry x="25" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- R-009リスク付箋 -->
+        <mxCell id="risk-009" value="R-009&lt;br&gt;消込誤り" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="7" vertex="1">
+          <mxGeometry x="150" y="790" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C-009キーコントロール付箋 -->
+        <mxCell id="control-009" value="C-009 ★&lt;br&gt;残高照合" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="7" vertex="1">
+          <mxGeometry x="-40" y="810" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- システム -->
+        <mxCell id="8" value="システム&lt;br&gt;（各種システム）" style="swimlane;html=1;startSize=60;fillColor=#F0E6FF;" parent="2" vertex="1">
+          <mxGeometry x="850" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <!-- S-001: 受注システム -->
+        <mxCell id="system-001" value="受注システム&lt;br&gt;(S-001)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="8" vertex="1">
+          <mxGeometry x="25" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- S-002: 与信システム -->
+        <mxCell id="system-002" value="与信システム&lt;br&gt;(S-002)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="8" vertex="1">
+          <mxGeometry x="25" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- S-003: 在庫システム -->
+        <mxCell id="system-003" value="在庫システム&lt;br&gt;(S-003)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="8" vertex="1">
+          <mxGeometry x="25" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- S-004: 会計システム -->
+        <mxCell id="system-004" value="会計システム&lt;br&gt;(S-004)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="8" vertex="1">
+          <mxGeometry x="25" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- S-005: 請求システム -->
+        <mxCell id="system-005" value="請求システム&lt;br&gt;(S-005)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="8" vertex="1">
+          <mxGeometry x="25" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- S-006: 銀行連携 -->
+        <mxCell id="system-006" value="銀行連携&lt;br&gt;(S-006)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="8" vertex="1">
+          <mxGeometry x="25" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- S-007: 売掛金システム -->
+        <mxCell id="system-007" value="売掛金システム&lt;br&gt;(S-007)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="8" vertex="1">
+          <mxGeometry x="25" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- レジェンド -->
+        <mxCell id="9" value="レジェンド&lt;br&gt;（凡例）" style="swimlane;html=1;startSize=60;fillColor=#FFFFFF;" parent="2" vertex="1">
+          <mxGeometry x="1020" width="170" height="900" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="end" value="終了" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;" parent="9" vertex="1">
+          <mxGeometry x="35" y="840" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- レジェンド要素 -->
+        <mxCell id="legend-process" value="プロセス" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAEEFF;strokeColor=#000000;" parent="9" vertex="1">
+          <mxGeometry x="25" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-risk" value="リスク" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFE6E6;strokeColor=#B85450;size=15;fontSize=10;" parent="9" vertex="1">
+          <mxGeometry x="25" y="130" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-control" value="統制" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFE6;strokeColor=#82B366;size=15;fontSize=10;" parent="9" vertex="1">
+          <mxGeometry x="90" y="130" width="60" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-key-control" value="キー統制 ★" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFD700;strokeColor=#C8AB37;size=15;fontSize=10;fontStyle=1;" parent="9" vertex="1">
+          <mxGeometry x="25" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-system" value="システム" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8D8FF;strokeColor=#000000;" parent="9" vertex="1">
+          <mxGeometry x="25" y="230" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- フロー線 -->
+        <!-- 顧客→営業 -->
+        <mxCell id="flow-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="start" target="process-001" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 営業→与信 -->
+        <mxCell id="flow-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-001" target="process-002" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 与信→物流 -->
+        <mxCell id="flow-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-002" target="process-003" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 物流→営業（出荷指示） -->
+        <mxCell id="flow-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-003" target="process-004" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 営業→物流（出荷） -->
+        <mxCell id="flow-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-004" target="process-005" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 物流→経理（売上計上） -->
+        <mxCell id="flow-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-005" target="process-006" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 経理内フロー -->
+        <mxCell id="flow-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-006" target="process-007" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-007" target="process-008" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-008" target="process-009" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 消込→終了 -->
+        <mxCell id="flow-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="process-009" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- システム連携線（破線） -->
+        <!-- 営業→受注システム -->
+        <mxCell id="sys-flow-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#666666;" parent="2" source="process-001" target="system-001" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 与信→与信システム -->
+        <mxCell id="sys-flow-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#666666;" parent="2" source="process-002" target="system-002" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 物流→在庫システム -->
+        <mxCell id="sys-flow-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#666666;" parent="2" source="process-003" target="system-003" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 経理→会計システム -->
+        <mxCell id="sys-flow-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#666666;" parent="2" source="process-006" target="system-004" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 請求→請求システム -->
+        <mxCell id="sys-flow-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#666666;" parent="2" source="process-007" target="system-005" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 入金→銀行連携 -->
+        <mxCell id="sys-flow-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#666666;" parent="2" source="process-008" target="system-006" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 消込→売掛金システム -->
+        <mxCell id="sys-flow-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#666666;" parent="2" source="process-009" target="system-007" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
